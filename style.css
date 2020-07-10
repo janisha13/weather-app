@@ -1,0 +1,71 @@
+h1 {
+    color: rgb(80, 77, 71);
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 28px;
+  }
+  li {
+    list-style: none;
+    font-weight: 100;
+    line-height: 20px;
+  }
+  ul {
+    padding: 0;
+  }
+  .weather-app {
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  .card-body {
+    text-align: center;
+  }
+  hr {
+    color: black 3px;
+  }
+  strong {
+    font-size: 50px;
+  }
+  .col-3 {
+    margin-top: 1cm;
+  }
+  svg {
+    margin-right: 1cm;
+  }
+  i {
+    width: 300px;
+    color: rgb(141, 101, 37);
+  }
+  .card-img-top {
+    width: 100px;
+    height: 100px;
+  }
+  #search-button {
+    font-weight: 500;
+    border-radius: 5px;
+    background: #f3e7dd;
+    border-color: #f3e7dd;
+    border-width: 1px;
+    color: rgb(22, 21, 21);
+    vertical-align: middle;
+    width: 6%;
+    height: 33px;
+  }
+  
+  #location-button {
+    max-width: 40px;
+    max-height: 40px;
+    vertical-align: middle;
+    background-color: #f3e7dd;
+    border-color: #f3e7dd;
+    border-radius: 100%;
+    box-shadow: 0px;
+  }
+  #icon-button {
+    max-width: 40px;
+    max-height: 40px;
+    vertical-align: middle;
+    padding: 3%;
+  }
+  

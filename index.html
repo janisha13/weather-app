@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Janisha's Weather</title>
+    <meta charset="UTF-8" />
+    <link href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/589c510152.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+
+        <form class="search-form" id="search-form">
+          
+          <Button class="loc-butt" id="location-button"><svg id="icon-button"
+            width=""
+            height=""
+            viewBox="0 0 16 16"
+            class="bi bi-geo-alt"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+            />
+          </svg></Button>
+          
+          <input
+          id="search-city"
+          type="search"
+          placeholder="Search for a city..."
+          class="col-sm-8 ml-4 mr-2"
+          autocomplete="off"
+        />
+         <button id="search-button"><svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          class="bi bi-search"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+          />
+        </svg></button> 
+        </form>
+
+
+        <h1 id="current-city"></h1>
+        <ul>
+          <li id="current-day"></li>
+          <li id="description">
+           
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-3">
+            <strong id="temperature"></strong
+            ><a href="#" id="fahrenheit-input">°F</a>|
+            <a href="#" id="celsius-link">°C</a>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
+            </ul>
+          </div>
+          <div class="col-4"><img src="images/weathericon.svg" alt="imageweather" /></div>
+            
+          </div>
+          <br />
+          <br />
+          <br />
+          <hr />
+          
+          <!--weather cards-->
+        <div class= "row pb-3">
+          <div class="col-3">
+              <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Thursday</h5>
+                    <img src="images/skater.svg" class="card-img-top" alt="sunny">
+                    <p class="card-text">Sunny</p>
+                    <p class="tempbottom">67°</p>
+                    
+                   </div>
+              </div>
+          </div>
+         
+            <div class="col-3">
+                <div class="card" >
+                    <div class="card-body">
+                      <h5 class="card-title">Friday</h5>
+                      <img src="images/weathericon.svg" class="card-img-top" alt="...">
+                      <p class="card-text">Thunderstorm</p>
+                      <p class="tempBottom">80°</p>
+                     </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" >
+                    <div class="card-body">
+                      <h5 class="card-title">Saturday</h5>
+                      <img src="images/outside.svg" class="card-img-top" alt="...">
+                      <p class="card-text">Partly cloudy</p>
+                      <p class="tempBottom">70°</p>
+                     </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" >
+                    <div class="card-body">
+                      <h5 class="card-title">Sunday</h5>
+                      <img src="images/dog.svg" class="card-img-top" alt="...">
+                      <p class="card-text">Cloudy</p>
+                      <p class="tempBottom">75°</p>
+                     </div>
+                </div>
+            </div>
+
+           
+           
+           
+        </div>       
+     </div>     
+    <script src="src/script.js"></script>
+  </body>
+</html>
