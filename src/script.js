@@ -25,6 +25,7 @@ function find(city) {
   let apiKey = "5d4c6521db7d8a0363226daf8e26f97d";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayWeatherCondition);
+ 
 }
 
 function displayWeatherCondition(response) {
@@ -38,7 +39,10 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  let iconElement = document.querySelector("#icon")
+  iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
+
 function search(event) {
   event.preventDefault();
   let city = document.querySelector("#search-city").value;
@@ -54,6 +58,10 @@ function getCurrentLocation(event) {
     do_something(position.coords.latitude, position.coords.longitude);
   });
 }
+
+
+
+
 //bonus
 function covertFahren(event) {
   event.preventDefault();
@@ -72,6 +80,10 @@ fahrenheitInput.addEventListener("click", covertFahren);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", covertCelsius);
+
+
+
+
 
 find("Alabama");
 
