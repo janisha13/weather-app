@@ -3,6 +3,7 @@ h1 {
     font-size: 26px;
     font-weight: 200;
     line-height: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   li {
     list-style: none;
@@ -43,14 +44,15 @@ h1 {
   }
   #search-button {
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 110%;
     background: #f3e7dd;
     border-color: #f3e7dd;
     border-width: 1px;
     color: rgb(22, 21, 21);
     vertical-align: middle;
     width: 6%;
-    height: 33px;
+    max-width: 40px;
+    max-height: 40px;
   }
   
   #location-button {
@@ -70,7 +72,10 @@ h1 {
   }
   #mainpic{
     width: 400px;
-    height: 400px;
+    height: 200px;
+    margin-left: 6in;
+ 
+    
   }
   .btn-btn-primary{
     color: black;
