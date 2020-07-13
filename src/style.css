@@ -69,14 +69,17 @@ h1 {
     padding: 3%;
   }
   #mainpic{
-    width: 300px;
+    width: 400px;
     height: 400px;
   }
-  .btn btn-primary{
+  .btn-btn-primary{
     color: black;
     background-color: #f3e7dd;
+    border-color: #f3e7dd;
+    border-radius: .5px;
+    font-style: italic;
   }
-  .topsection{
+  #topsection{
     padding: 20px;
     margin-left: 20px;
   }
