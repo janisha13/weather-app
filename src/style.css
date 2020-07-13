@@ -19,8 +19,12 @@ h1 {
     margin: 20px auto;
     border-radius: 10px;
   }
+  .card{
+    width: 100%;
+  }
   .card-body {
     text-align: center;
+    width: 100%;
   }
   hr {
     color: black 3px;
@@ -41,6 +45,10 @@ h1 {
   .card-img-top {
     width: 100px;
     height: 100px;
+    background-attachment: fixed;
+  }
+  #leftLeft{
+    margin-top: 20px;
   }
   #search-button {
     font-weight: 500;
@@ -73,8 +81,9 @@ h1 {
   #mainpic{
     width: 400px;
     height: 200px;
-    margin-left: 6in;
-    margin-top: 1cm;
+    padding-left: 4cm;
+    margin-left: 3cm;
+    
   }
   .btn-btn-primary{
     color: black;
